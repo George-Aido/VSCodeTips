@@ -43,7 +43,7 @@ This guide assumes that you have `npm` installed in your system. If this is not 
 More details about `NVM` can be found [here][nvm].
 
 
-## Important packages.
+## Node Package Manager:
 
 ##### Check outdated npm packages (globally):
 
@@ -57,6 +57,7 @@ More details about `NVM` can be found [here][nvm].
     
     npm list -g --depth=0
     
+More details about `NPM` can be found [here][npm].
 ## ESLint
 
 ##### What's a linter?
@@ -83,7 +84,7 @@ A few options should appear for you to choose. You can either answer some questi
 Once that is done you should have a `.eslintrc` file inside your project where you can configure the linter.
 More about configuring this file can be found [here][eslint_conf].
         
-[npm]: https://github.com/npm/npminiteslint
+[npm]: https://github.com/npm/npm
 [nvm_install]: https://github.com/creationix/nvm/blob/v0.31.0/install.sh
 [nvm]: https://github.com/creationix/nvm.git
 [eslint]: https://github.com/eslint/eslint
