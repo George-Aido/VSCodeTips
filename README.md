@@ -45,10 +45,6 @@ More details about `NVM` can be found [here][nvm].
 
 ## Important packages.
 
-##### <a name="initeslint"></a> How to install [eslint][eslint] or update it (globally):
-
-    npm install -g eslint
-        
 ##### Check outdated npm packages (globally):
 
     npm outdated -g --depth=0
@@ -57,22 +53,30 @@ More details about `NVM` can be found [here][nvm].
         
     npm update -g
 
+##### Show globally installed `npm` packages:
+    
+    npm list -g --depth=0
+    
 ## ESLint
 
 ##### What's a linter?
 
 A linter is a static code analysis tool that points out common mistakes and potential bugs in source code, as well as stylistic errors. 
 
-##### What about ESLint?
+##### What about `ESLint`?
 
 ESLint is an open source JavaScript linting utility originally created by Nicholas C. Zakas in June 2013. Code [lintinging][eslint_wiki] is a type of static analysis that is frequently use to find problematic patterns or code that doesn't adhere to certain style guidelines. There are code linters for most programming languages, and compilers sometimes incorporate linting into the compilation process.
+More about `ESLint` [here][eslint].
 
 ##### How do I start with ESLint in VSCode?
 
-You should first have `eslint` installed in your system. [Here](#initeslint) is how to do this. After that you should also install the [ESLint extension][vscode_eslint].
-Then, in a terminal, navigate to your project's folder and type:
+- You should first have `eslint` installed in your system. Here is how to do this: 
+
+        npm install -g eslint
+    
+- After that you should also install the [ESLint extension][vscode_eslint]. Then, in a terminal, navigate to your project's folder and type:
         
-    eslint --init
+        eslint --init
     
 A few options should appear for you to choose. You can either answer some questions about your preferences and style or you can choose a predefined one.
 
