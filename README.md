@@ -75,7 +75,11 @@ More about `ESLint` [here][eslint].
 
         npm install -g eslint
     
-- After that you should also install the [ESLint extension][vscode_eslint]. Then, in a terminal, navigate to your project's folder and type:
+- After that you should also install the [ESLint extension][vscode_eslint]:
+
+![vscode eslint][imageVSeslint] 
+
+- Then, in a terminal, navigate to your project's folder and type:
         
         eslint --init
     
@@ -89,7 +93,7 @@ More about configuring this file can be found [here][eslint_conf].
 VSCode provides built in intellisense for any JS symbols that exist inside the working file. In order to have intellisense for a required module you need to provide a `TypeScript` file for it.
 These definition files (for example `node.d.ts`) can be used to provide metadata to VS Code about the JavaScript based frameworks you are consuming in your application.
 
-Let's say that you need to have intellisense for the popular [lodash][lodash] module. 
+Let's say that you need to have intellisense for the popular [lodash][lodash] module.
 
 - First install [typings][typings] in your machine by running:
         
@@ -115,3 +119,4 @@ Afterwards, you should be able to have something like this:
 [lodash]: https://lodash.com
 
 [imageVSlodash]: /assets/images/vscodelodash.png
+[imageVSeslint]: /assets/images/eslintvscode.png
