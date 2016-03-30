@@ -83,6 +83,26 @@ A few options should appear for you to choose. You can either answer some questi
 
 Once that is done you should have a `.eslintrc` file inside your project where you can configure the linter.
 More about configuring this file can be found [here][eslint_conf].
+
+##### How do I get Intellisense?
+
+VSCode provides built in intellisense for any JS symbols that exist inside the working file. In order to have intellisense for a required module you need to provide a `TypeScript` file for it.
+These definition files (for example `node.d.ts`) can be used to provide metadata to VS Code about the JavaScript based frameworks you are consuming in your application.
+
+Let's say that you need to have intellisense for the popular [lodash][lodash] module. 
+
+- First install [typings][typings] in your machine by running:
+        
+        npm install typings --global
+        
+- Then you should be able to install the typescript file for it:
+
+        typings install lodash --ambient
+
+Afterwards, you should be able to have something like this:
+
+![vscode lodash][imageVSlodash]
+
         
 [npm]: https://github.com/npm/npm
 [nvm_install]: https://github.com/creationix/nvm/blob/v0.31.0/install.sh
@@ -91,3 +111,7 @@ More about configuring this file can be found [here][eslint_conf].
 [eslint_wiki]: http://en.wikipedia.org/wiki/Lint_(software)
 [eslint_conf]: http://eslint.org/docs/user-guide/configuring
 [vscode_eslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+[typings]: https://github.com/typings/typings
+[lodash]: https://lodash.com
+
+[imageVSlodash]: /assets/images/vscodelodash.png
